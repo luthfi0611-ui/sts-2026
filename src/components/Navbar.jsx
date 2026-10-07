@@ -5,13 +5,11 @@ export default function Navbar() {
   return (
     <nav className="border-b bg-white">
       <div className="mx-auto flex h-16 max-w-6xl items-center px-4">
-
-        {/* Logo */}
+        
         <Link to="/" className="text-lg font-semibold">
           sts
         </Link>
 
-        {/* Menu Tengah */}
         <div className="absolute left-1/2 flex -translate-x-1/2 items-center gap-8">
           <Link
             to="/"
@@ -42,7 +40,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Sign In */}
         <Link
           to="/signin"
           className="ml-auto rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800"
