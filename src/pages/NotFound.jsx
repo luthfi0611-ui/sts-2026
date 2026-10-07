@@ -1,12 +1,11 @@
-import { Link } from "react-router";
+import React from 'react'
 
-export default function NotFound() {
+function NotFound() {
   return (
-    <div className="p-6">
-      <p>404 - Halaman tidak ditemukan</p>
-      <Link to="/" className="text-sm underline">
-        Kembali
-      </Link>
+    <div>
+      <h1>Page Not Found</h1>
     </div>
-  );
+  )
 }
+
+export default NotFound

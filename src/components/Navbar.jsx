@@ -1,66 +1,49 @@
+
 import { Link } from "react-router";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
 
 export default function Navbar() {
   return (
     <nav className="border-b bg-white">
-      <div className="mx-auto flex h-16 max-w-4xl items-center justify-between px-4">
-        
-        <Link to="/" className="flex items-center gap-2 font-semibold">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-black text-white">
-            L
-          </div>
-          Logo
+      <div className="mx-auto flex h-16 max-w-6xl items-center px-4">
+
+        {/* Logo */}
+        <Link to="/" className="text-lg font-semibold">
+          sts
         </Link>
 
-        <NavigationMenu>
-          <NavigationMenuList className="gap-1">
-            <NavigationMenuItem>
-              <Link
-                to="/"
-                className="rounded-md px-4 py-2 text-sm hover:bg-gray-100"
-              >
-                Home
-              </Link>
-            </NavigationMenuItem>
+        {/* Menu Tengah */}
+        <div className="absolute left-1/2 flex -translate-x-1/2 items-center gap-8">
+          <Link
+            to="/"
+            className="text-sm text-gray-600 hover:text-black"
+          >
+            Home
+          </Link>
 
-            <NavigationMenuItem>
-              <Link
-                to="/about"
-                className="rounded-md px-4 py-2 text-sm hover:bg-gray-100"
-              >
-                About
-              </Link>
-            </NavigationMenuItem>
+          <Link
+            to="/about"
+            className="text-sm text-gray-600 hover:text-black"
+          >
+            About
+          </Link>
 
-            <NavigationMenuItem>
-              <Link
-                to="/testimony"
-                className="rounded-md px-4 py-2 text-sm hover:bg-gray-100"
-              >
-                Testimony
-              </Link>
-            </NavigationMenuItem>
+          <Link
+            to="/testimony"
+            className="text-sm text-gray-600 hover:text-black"
+          >
+            Testimony
+          </Link>
 
-            <NavigationMenuItem>
-              <Link
-                to="/faq"
-                className="rounded-md px-4 py-2 text-sm hover:bg-gray-100"
-              >
-                FAQ
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
+          <Link
+            to="/faq"
+            className="text-sm text-gray-600 hover:text-black"
+          >
+            FAQ
+          </Link>
+        </div>
 
-        <Link
-          to="/signin"
-          className="rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800"
-        >
+        {/* Sign In polos */}
+        <Link to="/signin" className="ml-auto">
           Sign In
         </Link>
 
@@ -68,3 +51,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
