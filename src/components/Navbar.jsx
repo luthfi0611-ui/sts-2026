@@ -42,8 +42,11 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Sign In polos */}
-        <Link to="/signin" className="ml-auto">
+        {/* Sign In */}
+        <Link
+          to="/signin"
+          className="ml-auto rounded-lg bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-800"
+        >
           Sign In
         </Link>
 
